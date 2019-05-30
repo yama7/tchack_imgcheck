@@ -123,7 +123,6 @@ def main():
     img_base64 = img_to_base64('./sample.jpg')
     googlecloud_vision_json = get_json_from_googlecloud_vision_api(img_base64)
 
-    # print('is_rule_001',is_rule_001(googlecloud_vision_json))  -> vision_apiのjsonをつかう場合は、こう書く
     print('is_rule_001', is_rule_001())
 
     print('is_rule_002', is_rule_002())
